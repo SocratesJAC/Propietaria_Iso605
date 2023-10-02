@@ -1,0 +1,74 @@
+﻿@model EGSHOPNOMINA2.Transacciones
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transacciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Idingresoodeduccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idingresoodeduccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Monto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Monto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleados.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empleados.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipodededucciones.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipodededucciones.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tiposdeingresos.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tiposdeingresos.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDtransacciones }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,104 @@
+﻿@model IEnumerable<EGSHOPNOMINA2.Departamento>
+
+@{
+    ViewBag.Title = "Departamentos";
+}
+
+<h2>Departamentos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cargo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UbicacionFisica)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Encargado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>Acciones</th>
+    </tr>
+    <tr>
+        <td>
+            Gerente de Ventas
+        </td>
+        <td>
+            Oficina 101
+        </td>
+        <td>
+            Juan Pérez
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 1 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 1 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 1 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Analista de Marketing
+        </td>
+        <td>
+            Oficina 202
+        </td>
+        <td>
+            María López
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 2 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 2 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 2 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Técnico de Soporte
+        </td>
+        <td>
+            Oficina 303
+        </td>
+        <td>
+            Ana García
+        </td>
+        <td>
+            Inactivo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 3 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 3 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 3 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Asistente de Recursos Humanos
+        </td>
+        <td>
+            Oficina 404
+        </td>
+        <td>
+            Carlos Rodríguez
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 4 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 4 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 4 })
+        </td>
+    </tr>
+</table>

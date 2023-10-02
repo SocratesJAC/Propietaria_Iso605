@@ -1,0 +1,119 @@
+﻿@model IEnumerable<EGSHOPNOMINA2.Puesto>
+
+@{
+    ViewBag.Title = "Puesto";
+}
+
+<h2>Puesto</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NiveldeRiesgo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salariominimo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salariomaximo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>Acciones</th>
+    </tr>
+    <tr>
+        <td>
+            Puesto A
+        </td>
+        <td>
+            Alto
+        </td>
+        <td>
+            $2,000.00
+        </td>
+        <td>
+            $3,000.00
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 1 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 1 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 1 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Puesto B
+        </td>
+        <td>
+            Medio
+        </td>
+        <td>
+            $1,800.00
+        </td>
+        <td>
+            $2,800.00
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 2 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 2 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 2 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Puesto C
+        </td>
+        <td>
+            Bajo
+        </td>
+        <td>
+            $1,500.00
+        </td>
+        <td>
+            $2,200.00
+        </td>
+        <td>
+            Inactivo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 3 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 3 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 3 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Puesto D
+        </td>
+        <td>
+            Alto
+        </td>
+        <td>
+            $2,500.00
+        </td>
+        <td>
+            $3,500.00
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 4 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 4 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 4 })
+        </td>
+    </tr>
+</table>

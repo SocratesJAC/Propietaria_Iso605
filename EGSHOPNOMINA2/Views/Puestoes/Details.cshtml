@@ -1,0 +1,58 @@
+﻿@model EGSHOPNOMINA2.Puesto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Puesto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NiveldeRiesgo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NiveldeRiesgo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salariominimo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salariominimo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salariomaximo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salariomaximo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDpuesto }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

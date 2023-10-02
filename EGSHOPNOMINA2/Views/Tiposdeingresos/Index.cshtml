@@ -1,0 +1,90 @@
+﻿@model IEnumerable<EGSHOPNOMINA2.Tiposdeingresos>
+
+@{
+    ViewBag.Title = "Ingresos";
+}
+
+<h2>Ingresos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dependeelsalario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>Acciones</th>
+    </tr>
+    <tr>
+        <td>
+            Beneficios de Salud
+        </td>
+        <td>
+            Sí
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 1 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 1 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 1 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Bonificación Anual
+        </td>
+        <td>
+            No
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 2 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 2 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 2 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Seguro de Vida
+        </td>
+        <td>
+            Sí
+        </td>
+        <td>
+            Inactivo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 3 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 3 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 3 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Bonificación de Navidad
+        </td>
+        <td>
+            Sí
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 4 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 4 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 4 })
+        </td>
+    </tr>
+</table>
+

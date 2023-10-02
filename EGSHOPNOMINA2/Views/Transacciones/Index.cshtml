@@ -1,0 +1,68 @@
+﻿@model IEnumerable<EGSHOPNOMINA2.Transacciones>
+
+@{
+    ViewBag.Title = "Transacciones";
+}
+<h2>Transacciones</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Idingresoodeduccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Monto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleados.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipodededucciones.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tiposdeingresos.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Idingresoodeduccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Monto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empleados.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipodededucciones.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tiposdeingresos.Nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDtransacciones }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDtransacciones }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDtransacciones })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Nomina", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Departamentos ", "Index", "Departamentoes")</li>
+                    <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
+                    <li>@Html.ActionLink("Puestos", "Index", "Puestoes")</li>
+                    <li>@Html.ActionLink("Tipos de Ingresos", "Index", "Tiposdeingresos")</li>
+                    @*<li>@Html.ActionLink("Tipo de deducciones", "Index", "Tipodededucciones")</li>
+                    <li>@Html.ActionLink("Transacciones", "Index", "Transacciones")</li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <center><p>&copy; @DateTime.Now.Year - Yerinson Figuereo - Orlando Gonzalez - Eddy Brito - Janfer Nuñez - Andres Araujo </p></center>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

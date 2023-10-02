@@ -1,0 +1,74 @@
+﻿@model EGSHOPNOMINA2.Empleados
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Empleados</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalarioMensual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalarioMensual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IDnomina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDnomina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departamento.Cargo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departamento.Cargo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Puesto.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Puesto.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDempleados }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

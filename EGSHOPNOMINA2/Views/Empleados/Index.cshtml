@@ -1,0 +1,150 @@
+﻿@model IEnumerable<EGSHOPNOMINA2.Empleados>
+
+@{
+    ViewBag.Title = "Empleados";
+}
+
+<h2>Empleados</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SalarioMensual)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IDnomina)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Departamento.Cargo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Puesto.Nombre)
+        </th>
+        <th>Acciones</th>
+    </tr>
+    <tr>
+        <td>
+            Juan Pérez
+        </td>
+        <td>
+            123456789
+        </td>
+        <td>
+            $3,500.00
+        </td>
+        <td>
+            1001
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            Gerente
+        </td>
+        <td>
+            Supervisor
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 1 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 1 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 1 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            María López
+        </td>
+        <td>
+            987654321
+        </td>
+        <td>
+            $2,800.00
+        </td>
+        <td>
+            1002
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            Analista
+        </td>
+        <td>
+            Asociado
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 2 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 2 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 2 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Ana García
+        </td>
+        <td>
+            555555555
+        </td>
+        <td>
+            $2,200.00
+        </td>
+        <td>
+            1003
+        </td>
+        <td>
+            Inactivo
+        </td>
+        <td>
+            Técnico
+        </td>
+        <td>
+            Operario
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 3 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 3 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 3 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Carlos Rodríguez
+        </td>
+        <td>
+            777777777
+        </td>
+        <td>
+            $2,000.00
+        </td>
+        <td>
+            1004
+        </td>
+        <td>
+            Activo
+        </td>
+        <td>
+            Asistente
+        </td>
+        <td>
+            Asociado
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 4 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 4 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 4 })
+        </td>
+    </tr>
+</table>
+
