@@ -11,58 +11,123 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Idingresoodeduccion)
+            Empleado
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Fecha)
+            Ingreso o Deduccion
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Monto)
+            Tipo Transaccion
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Estado)
+            Fecha
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Empleados.Nombre)
+            Monto
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Tipodededucciones.Nombre)
+            Estado
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Tiposdeingresos.Nombre)
-        </th>
-        <th></th>
+        <th>Acciones</th>
     </tr>
-
-@foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Idingresoodeduccion)
+            Arturo Reyes
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Fecha)
+            Ingreso <!-- Ejemplo de valor fijo -->
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Monto)
+            Transferencia
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Estado)
+            2023-10-28 <!-- Ejemplo de valor fijo -->
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Empleados.Nombre)
+            $500 <!-- Ejemplo de valor fijo -->
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Tipodededucciones.Nombre)
+            Activo <!-- Ejemplo de valor fijo -->
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Tiposdeingresos.Nombre)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IDtransacciones }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IDtransacciones }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IDtransacciones })
+            @Html.ActionLink("Editar", "Editar", new { id = 1 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 1 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 1 })
         </td>
     </tr>
-}
-
+    <tr>
+        <td>
+            Pamela Suarez
+        </td>
+        <td>
+            Deducción <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            Transferencia
+        </td>
+        <td>
+            2023-10-27 <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            $200 <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            Pendiente <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 2 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 2 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 2 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Alberto Guzman
+        </td>
+        <td>
+            Deducción <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            Efectivo
+        </td>
+        <td>
+            2023-10-26 <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            $350 <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            Activo <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 3 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 3 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 3 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Luis Rodriguez
+        </td>
+        <td>
+            Ingreso <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            Cheque
+        </td>
+        <td>
+            2023-10-25 <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            $600 <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            Pendiente <!-- Ejemplo de valor fijo -->
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 4 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 4 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 4 })
+        </td>
+    </tr>
 </table>

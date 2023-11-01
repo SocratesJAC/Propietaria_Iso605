@@ -129,6 +129,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DeduccionesController.cs" />
     <Compile Include="Controllers\DepartamentoesController.cs" />
     <Compile Include="Controllers\EmpleadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -266,6 +267,7 @@
     <Content Include="Views\Transacciones\Details.cshtml" />
     <Content Include="Views\Transacciones\Edit.cshtml" />
     <Content Include="Views\Transacciones\Index.cshtml" />
+    <Content Include="Views\Deducciones\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

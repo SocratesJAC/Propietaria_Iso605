@@ -6,27 +6,27 @@ using System.Web.Mvc;
 
 namespace EGSHOPNOMINA2.Controllers
 {
-    public class TransaccionesController : Controller
+    public class DeduccionesController : Controller
     {
-        // GET: Transacciones
+        // GET: Deducciones
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: Transacciones/Details/5
+        // GET: Deducciones/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Transacciones/Create
+        // GET: Deducciones/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Transacciones/Create
+        // POST: Deducciones/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -42,13 +42,13 @@ namespace EGSHOPNOMINA2.Controllers
             }
         }
 
-        // GET: Transacciones/Edit/5
+        // GET: Deducciones/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Transacciones/Edit/5
+        // POST: Deducciones/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -64,13 +64,13 @@ namespace EGSHOPNOMINA2.Controllers
             }
         }
 
-        // GET: Transacciones/Delete/5
+        // GET: Deducciones/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Transacciones/Delete/5
+        // POST: Deducciones/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

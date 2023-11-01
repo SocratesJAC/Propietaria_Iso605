@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Deducciones</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Nombre
+        </th>
+        <th>
+            Depende del salario
+        </th>
+        <th>
+            Estado
+        </th>
+        <th>Acciones</th>
+    </tr>
+    <tr>
+        <td>
+            Servicios de salud
+        </td>
+        <td>
+            <input type="checkbox" disabled checked /> <!-- Checkbox deshabilitado -->
+        </td>
+        <td>
+            <input type="checkbox" disabled checked /> <!-- Checkbox deshabilitado -->
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 1 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 1 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 1 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Educacion
+        </td>
+        <td>
+            <input type="checkbox" disabled checked /> <!-- Checkbox deshabilitado -->
+        </td>
+        <td>
+            <input type="checkbox" disabled checked /> <!-- Checkbox deshabilitado -->
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 2 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 2 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 2 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Creditos hipotecarios
+        </td>
+        <td>
+            <input type="checkbox" disabled checked /> <!-- Checkbox deshabilitado -->
+        </td>
+        <td>
+            <input type="checkbox" disabled checked /> <!-- Checkbox deshabilitado -->
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 3 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 3 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 3 })
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Donativos
+        </td>
+        <td>
+            <input type="checkbox" disabled checked /> <!-- Checkbox deshabilitado -->
+        </td>
+        <td>
+            <input type="checkbox" disabled checked /> <!-- Checkbox deshabilitado -->
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = 4 }) |
+            @Html.ActionLink("Detalles", "Detalles", new { id = 4 }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = 4 })
+        </td>
+    </tr>
+</table>
